@@ -129,10 +129,10 @@ const AppNavigator = props => {
         login = (<Drawer.Screen name="Login Screen" component={LoginStack} options={{ headerShown: false }} />)
     }
 
-    // let forms= null;
-    // if(props.userId == "27A1Xq8W4rNr6d4U7LzM5QZ7kY72"){
-    let forms = (<Drawer.Screen name="Forms Screen" component={FormsStack} options={{ headerShown: false }} />)
-    // }
+    let forms = null;
+    if (props.userId == "bLth2IULV4M9eUml2MNS4XBcrbP2") {
+        forms = (<Drawer.Screen name="Forms Screen" component={FormsStack} options={{ headerShown: false }} />)
+    }
 
     return (
         <Drawer.Navigator initialRouteName="Home Screen">

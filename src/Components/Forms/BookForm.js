@@ -26,7 +26,7 @@ const BookForm = () => {
         .post(baseUrl + itemsUrl + extensionFormat, bookItem)
         .then((response) => {
           console.log(response.data);
-          // Alert.alert("Invalid Input!", err);
+          // Alert.alert("Invalid Input!", response.data);
           setInputValue("");
           setInputValue2("");
           setInputValue3("");

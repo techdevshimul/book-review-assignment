@@ -44,7 +44,7 @@ const BookDetails = (props) => {
         <View style={styles.hr} />
         <Pressable onPress={handleCommentBtn}>
           <View style={styles.commentView}>
-            <Text style={styles.commentBtn}>View Comments</Text>
+            <Text style={styles.commentBtn}>View Or Add Comments</Text>
           </View>
         </Pressable>
         <View style={styles.hr} />
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    height: 200,
+    height: 400,
     borderRadius: 5,
   },
   descTitle: {

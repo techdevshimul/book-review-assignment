@@ -22,7 +22,7 @@ const CommentList = (props) => {
       />
     );
   } else {
-    commentList = <Text>Be The First One To Comment On This Book!</Text>;
+    commentList = <Text style={{ textAlign: "center", fontSize: 16 }}>Be The First One To Comment On This Book!</Text>;
   }
 
   return <View style={{ flex: 1 }}>{commentList}</View>;

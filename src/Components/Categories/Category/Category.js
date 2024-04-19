@@ -54,7 +54,7 @@ const Category = (props) => {
           padding: 2,
         }}
       >
-        Please Create Atleast One Account To Use This App!
+        This Category Is Empty!
       </Text>
     );
   }

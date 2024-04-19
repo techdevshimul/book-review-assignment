@@ -20,7 +20,7 @@ const CategoryForm = () => {
         .post(baseUrl + categoriesUrl + extensionFormat, categoryItem)
         .then((response) => {
           console.log(response.data);
-          // Alert.alert("Invalid Input!", err);
+          // Alert.alert("Invalid Input!", response.data);
           setInputValue("");
           setInputValue2("");
           setInputValue3("");
@@ -66,7 +66,7 @@ const CategoryForm = () => {
             borderColor: "gray",
             padding: 7,
           }}
-          placeholder="Category Name"
+          placeholder="Details"
           value={inputValue3}
           onChangeText={(text) => setInputValue3(text)}
         />
@@ -77,7 +77,7 @@ const CategoryForm = () => {
           handleSubmitCategory();
         }}
       >
-        <Text style={styles.txt}>Add Book</Text>
+        <Text style={styles.txt}>Add Category</Text>
       </Pressable>
     </View>
   );
